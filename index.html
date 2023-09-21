@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Analytic Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Menu -->
+      <div class="menu flex-c">
+        <div class="logo">
+          <div class="icon">
+            <img src="./anonymous.png" width="50px" height="50px">
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="icon">
+            <ion-icon name="filter-circle-outline"></ion-icon>
+          </div>
+
+          <div class="icon">
+            <ion-icon name="file-tray-full-outline"></ion-icon>
+          </div>
+
+          <div class="icon">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </div>
+
+          <div class="icon">
+            <ion-icon name="pulse-outline"></ion-icon>
+          </div>
+
+          <div class="icon">
+            <ion-icon name="storefront-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="settings">
+          <div class="icon">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <!-- End Menu -->
+
+      <div class="content">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Head -->
+          <div class="head flex">
+            <h1>Good Morning 👋</h1>
+
+            <div class="box flex time-period">
+              Monthly
+              <ion-icon class="angle" name="caret-down-outline"></ion-icon>
+            </div>
+
+            <div class="box flex">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- End Head -->
+
+          <!-- Stats -->
+          <div class="stats flex">
+            <div class="stats box sales">
+              <h2 class="heading">Active client/Total client</h2>
+              <canvas id="sales"></canvas>
+            </div>
+
+            <div class="stats-box earning">
+              <h2 class="heading">Total loan</h2>
+              <div class="earning-amount flex-c">
+                <div class="earning-icon flex">
+                  <ion-icon name="logo-paypal"></ion-icon>
+                </div>
+                <p>2,211,,456</p>
+              </div>
+              <canvas id="earning"></canvas>
+            </div>
+          </div>
+          
+
+          <!-- Product Stats -->
+          <div class="product-stats flex">
+            <div class="product-sales stats-box">
+              <h2 class="heading">loan history</h2>
+              <canvas id="products"></canvas>
+            </div>
+
+            <div class="top-selling stats-box">
+              <h2 class="heading">collection history</h2>
+
+              <table class="top-selling-products" height="100%" width="100%">
+                <tr>
+                  <th>ID</th>
+                  <th>Somiti name</th>
+                  <th>Amount</th>
+                  <th>member</th>
+                </tr>
+
+                <tr>
+                  <td>68231</td>
+                  <td>
+                    <div class="product-name flex">
+                     
+                      <p>Saheb nagar gram samiti</p>
+                    </div>
+                  </td>
+                  <td>25000</td>
+                  <td>744</td>
+                </tr>
+
+                <tr>
+                  <td>68231</td>
+                  <td>
+                    <div class="product-name iphone flex">
+                      
+                      <p>saheb nagar gram somiti</p>
+                    </div>
+                  </td>
+                  <td>300000</td>
+                  <td>800</td>
+                </tr>
+
+                <tr>
+                  <td>68231</td>
+                  <td>
+                    <div class="product-name windows flex">
+                      
+                      <p>saheb nagar gram somiti</p>
+                    </div>
+                  </td>
+                  <td>$180</td>
+                  <td>195</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- End Product Stats -->
+
+          <!-- End Stats -->
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="title flex">
+            <h2 class="heading">Core banking system(cbs)</h2>
+            <div class="icon">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="user">
+            <img src="https://raw.githubusercontent.com/programmercloud/analytic-dashboard/main/img/avatar.png" alt="" />
+            <h2>Titas dada</h2>
+            <p>Admin</p>
+          </div>
+
+          <div class="activities">
+            <div class="title flex">
+              <h2 class="heading">Avtivity</h2>
+              <p>View All</p>
+            </div>
+          </div>
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+
+            <div class="task">
+              <h2>New loan approved</h2>
+              <p>300</p>
+            </div>
+            <div class="time">11:30 AM</div>
+          </div>
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+
+            <div class="task">
+              <h2>Email</h2>
+              <p>juhdfh@gmail.com</p>
+            </div>
+           
+          </div>
+
+          <div class="upgrade flex-c">
+            <div class="icon">
+              <ion-icon name="albums-outline"></ion-icon>
+            </div>
+
+            <p>Apply now for loan <span>PRO</span></p>
+          </div>
+
+          <div class="btn flex">Apply</div>
+        </div>
+        <!-- End Profile -->
+      </div>
+    </div>
+    
+    
+    <!-- End Dashboard -->
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
